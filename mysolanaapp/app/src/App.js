@@ -1,4 +1,3 @@
-import './App.css';
 import { useState } from 'react';
 import { Connection, PublicKey } from '@solana/web3.js';
 import { Program, AnchorProvider, web3 } from '@project-serum/anchor';
@@ -14,6 +13,9 @@ import {
   WalletModalProvider,
   WalletMultiButton,
 } from '@solana/wallet-adapter-react-ui';
+
+import './App.css';
+
 require('@solana/wallet-adapter-react-ui/styles.css');
 
 const wallets = [new PhantomWalletAdapter()];
